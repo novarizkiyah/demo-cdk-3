@@ -16,7 +16,7 @@ class LambdaFunctionStack(Stack):
         fn_lambda_a = _lambda.Function(
             self,
             "{}-function-".format(id),
-            code=_lambda.AssetCode("../lambda-function/"),
+            code=_lambda.AssetCode("lambda-function"),
             handler="app.handler",
             timeout=_cdk.Duration.seconds(60),
             runtime=_lambda.Runtime.PYTHON_3_8)
@@ -34,13 +34,13 @@ class PipelineStack(Stack):
             synth=pipelines.ShellStep(
                 "Synth",
                 input=pipelines.CodePipelineSource.connection(
-                    "donnieprakoso/demo-cdk",
+                    "novarizkiyah/demo-cdk-3",
                     "main",
                     connection_arn=github_connection_arn
                 ),
-                commands=["cd 5-cdk-pipelines/cdk/", "npm install -g aws-cdk",
+                commands=["npm install -g aws-cdk",
                           "pip install -r requirements.txt", "cdk synth"],
-                primary_output_directory="5-cdk-pipelines/cdk/cdk.out"
+                primary_output_directory="cdk.out"
             ))
 
         pipeline.add_stage(

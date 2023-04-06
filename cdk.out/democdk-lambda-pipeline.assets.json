@@ -1,7 +1,7 @@
 {
   "version": "16.0.0",
   "files": {
-    "246846a61a89af9166a0c1d4ecf758f46ab9f1ad46f8359553ac6301733e6745": {
+    "a6dfc399bcc73122f8128dd9a51a792997fa33a9e9249890eabf0e30cd1468ca": {
       "source": {
         "path": "democdk-lambda-pipeline.template.json",
         "packaging": "file"
@@ -9,7 +9,7 @@
       "destinations": {
         "current_account-current_region": {
           "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
-          "objectKey": "246846a61a89af9166a0c1d4ecf758f46ab9f1ad46f8359553ac6301733e6745.json",
+          "objectKey": "a6dfc399bcc73122f8128dd9a51a792997fa33a9e9249890eabf0e30cd1468ca.json",
           "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
         }
       }

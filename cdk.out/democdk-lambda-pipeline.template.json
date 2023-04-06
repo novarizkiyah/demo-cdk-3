@@ -208,7 +208,7 @@
               "Effect": "Allow",
               "Resource": {
                 "Fn::GetAtt": [
-                  "PipelineSourcedonnieprakosodemocdkCodePipelineActionRoleD9651FB4",
+                  "PipelineSourcenovarizkiyahdemocdk3CodePipelineActionRole92060E7C",
                   "Arn"
                 ]
               }
@@ -307,18 +307,18 @@
                   "ConnectionArn": {
                     "Ref": "githubconnectionarnParameter"
                   },
-                  "FullRepositoryId": "donnieprakoso/demo-cdk",
+                  "FullRepositoryId": "novarizkiyah/demo-cdk-3",
                   "BranchName": "main"
                 },
-                "Name": "donnieprakoso_demo-cdk",
+                "Name": "novarizkiyah_demo-cdk-3",
                 "OutputArtifacts": [
                   {
-                    "Name": "donnieprakoso_demo_cdk_Source"
+                    "Name": "novarizkiyah_demo_cdk_3_Source"
                   }
                 ],
                 "RoleArn": {
                   "Fn::GetAtt": [
-                    "PipelineSourcedonnieprakosodemocdkCodePipelineActionRoleD9651FB4",
+                    "PipelineSourcenovarizkiyahdemocdk3CodePipelineActionRole92060E7C",
                     "Arn"
                   ]
                 },
@@ -340,11 +340,11 @@
                   "ProjectName": {
                     "Ref": "PipelineBuildSynthCdkBuildProject6BEFA8E6"
                   },
-                  "EnvironmentVariables": "[{\"name\":\"_PROJECT_CONFIG_HASH\",\"type\":\"PLAINTEXT\",\"value\":\"0fd8310413061f435334f17f7d41541d6d257cd52d8ca439c7305b544367955a\"}]"
+                  "EnvironmentVariables": "[{\"name\":\"_PROJECT_CONFIG_HASH\",\"type\":\"PLAINTEXT\",\"value\":\"dc0c8e048a15481e2d73386141088a5e22fdc6e2204ba66c251adaefe555a0b9\"}]"
                 },
                 "InputArtifacts": [
                   {
-                    "Name": "donnieprakoso_demo_cdk_Source"
+                    "Name": "novarizkiyah_demo_cdk_3_Source"
                   }
                 ],
                 "Name": "Synth",
@@ -555,7 +555,7 @@
         "aws:cdk:path": "democdk-lambda-pipeline/Pipeline/Pipeline/Resource"
       }
     },
-    "PipelineSourcedonnieprakosodemocdkCodePipelineActionRoleD9651FB4": {
+    "PipelineSourcenovarizkiyahdemocdk3CodePipelineActionRole92060E7C": {
       "Type": "AWS::IAM::Role",
       "Properties": {
         "AssumeRolePolicyDocument": {
@@ -587,10 +587,10 @@
         }
       },
       "Metadata": {
-        "aws:cdk:path": "democdk-lambda-pipeline/Pipeline/Pipeline/Source/donnieprakoso_demo-cdk/CodePipelineActionRole/Resource"
+        "aws:cdk:path": "democdk-lambda-pipeline/Pipeline/Pipeline/Source/novarizkiyah_demo-cdk-3/CodePipelineActionRole/Resource"
       }
     },
-    "PipelineSourcedonnieprakosodemocdkCodePipelineActionRoleDefaultPolicy9112DB38": {
+    "PipelineSourcenovarizkiyahdemocdk3CodePipelineActionRoleDefaultPolicyAF9ABB1C": {
       "Type": "AWS::IAM::Policy",
       "Properties": {
         "PolicyDocument": {
@@ -663,15 +663,15 @@
           ],
           "Version": "2012-10-17"
         },
-        "PolicyName": "PipelineSourcedonnieprakosodemocdkCodePipelineActionRoleDefaultPolicy9112DB38",
+        "PolicyName": "PipelineSourcenovarizkiyahdemocdk3CodePipelineActionRoleDefaultPolicyAF9ABB1C",
         "Roles": [
           {
-            "Ref": "PipelineSourcedonnieprakosodemocdkCodePipelineActionRoleD9651FB4"
+            "Ref": "PipelineSourcenovarizkiyahdemocdk3CodePipelineActionRole92060E7C"
           }
         ]
       },
       "Metadata": {
-        "aws:cdk:path": "democdk-lambda-pipeline/Pipeline/Pipeline/Source/donnieprakoso_demo-cdk/CodePipelineActionRole/DefaultPolicy/Resource"
+        "aws:cdk:path": "democdk-lambda-pipeline/Pipeline/Pipeline/Source/novarizkiyah_demo-cdk-3/CodePipelineActionRole/DefaultPolicy/Resource"
       }
     },
     "PipelineBuildSynthCdkBuildProjectRole231EEA2A": {
@@ -861,7 +861,7 @@
           ]
         },
         "Source": {
-          "BuildSpec": "{\n  \"version\": \"0.2\",\n  \"phases\": {\n    \"build\": {\n      \"commands\": [\n        \"cd 5-cdk-pipelines/cdk/\",\n        \"npm install -g aws-cdk\",\n        \"pip install -r requirements.txt\",\n        \"cdk synth\"\n      ]\n    }\n  },\n  \"artifacts\": {\n    \"base-directory\": \"5-cdk-pipelines/cdk/cdk.out\",\n    \"files\": \"**/*\"\n  }\n}",
+          "BuildSpec": "{\n  \"version\": \"0.2\",\n  \"phases\": {\n    \"build\": {\n      \"commands\": [\n        \"npm install -g aws-cdk\",\n        \"pip install -r requirements.txt\",\n        \"cdk synth\"\n      ]\n    }\n  },\n  \"artifacts\": {\n    \"base-directory\": \"cdk.out\",\n    \"files\": \"**/*\"\n  }\n}",
           "Type": "CODEPIPELINE"
         },
         "Cache": {

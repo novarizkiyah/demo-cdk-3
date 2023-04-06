@@ -30,7 +30,7 @@
         "validateOnSynth": false,
         "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
         "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
-        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/246846a61a89af9166a0c1d4ecf758f46ab9f1ad46f8359553ac6301733e6745.json",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/a6dfc399bcc73122f8128dd9a51a792997fa33a9e9249890eabf0e30cd1468ca.json",
         "requiresBootstrapStackVersion": 6,
         "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
         "additionalDependencies": [
@@ -82,16 +82,16 @@
             "data": "Pipeline9850B417"
           }
         ],
-        "/democdk-lambda-pipeline/Pipeline/Pipeline/Source/donnieprakoso_demo-cdk/CodePipelineActionRole/Resource": [
+        "/democdk-lambda-pipeline/Pipeline/Pipeline/Source/novarizkiyah_demo-cdk-3/CodePipelineActionRole/Resource": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "PipelineSourcedonnieprakosodemocdkCodePipelineActionRoleD9651FB4"
+            "data": "PipelineSourcenovarizkiyahdemocdk3CodePipelineActionRole92060E7C"
           }
         ],
-        "/democdk-lambda-pipeline/Pipeline/Pipeline/Source/donnieprakoso_demo-cdk/CodePipelineActionRole/DefaultPolicy/Resource": [
+        "/democdk-lambda-pipeline/Pipeline/Pipeline/Source/novarizkiyah_demo-cdk-3/CodePipelineActionRole/DefaultPolicy/Resource": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "PipelineSourcedonnieprakosodemocdkCodePipelineActionRoleDefaultPolicy9112DB38"
+            "data": "PipelineSourcenovarizkiyahdemocdk3CodePipelineActionRoleDefaultPolicyAF9ABB1C"
           }
         ],
         "/democdk-lambda-pipeline/Pipeline/Pipeline/Build/Synth/CdkBuildProject/Role/Resource": [
