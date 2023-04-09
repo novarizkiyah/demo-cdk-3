@@ -41,7 +41,7 @@
           "S3Bucket": {
             "Fn::Sub": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}"
           },
-          "S3Key": "ea18b950cd5eb71282bccb96841ddd5e2b65a4c43bd92aa74a930463ec8aee07.zip"
+          "S3Key": "ecd7d91fb18b9a115d897f38ba936dfd3a2a8f10abd3ace8d0d2998e77c0ab90.zip"
         },
         "Role": {
           "Fn::GetAtt": [
@@ -58,7 +58,7 @@
       ],
       "Metadata": {
         "aws:cdk:path": "democdk-lambda-pipeline/staging/lambda/lambda-function-/Resource",
-        "aws:asset:path": "../asset.ea18b950cd5eb71282bccb96841ddd5e2b65a4c43bd92aa74a930463ec8aee07",
+        "aws:asset:path": "../asset.ecd7d91fb18b9a115d897f38ba936dfd3a2a8f10abd3ace8d0d2998e77c0ab90",
         "aws:asset:is-bundled": false,
         "aws:asset:property": "Code"
       }

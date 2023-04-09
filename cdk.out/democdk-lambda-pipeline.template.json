@@ -1493,7 +1493,7 @@
           ]
         },
         "Source": {
-          "BuildSpec": "{\n  \"version\": \"0.2\",\n  \"phases\": {\n    \"install\": {\n      \"commands\": [\n        \"npm install -g cdk-assets@2\"\n      ]\n    },\n    \"build\": {\n      \"commands\": [\n        \"cdk-assets --path \\\"assembly-democdk-lambda-pipeline-staging/democdklambdapipelinestaginglambda167BDDF4.assets.json\\\" --verbose publish \\\"ea18b950cd5eb71282bccb96841ddd5e2b65a4c43bd92aa74a930463ec8aee07:current_account-current_region\\\"\"\n      ]\n    }\n  }\n}",
+          "BuildSpec": "{\n  \"version\": \"0.2\",\n  \"phases\": {\n    \"install\": {\n      \"commands\": [\n        \"npm install -g cdk-assets@2\"\n      ]\n    },\n    \"build\": {\n      \"commands\": [\n        \"cdk-assets --path \\\"assembly-democdk-lambda-pipeline-staging/democdklambdapipelinestaginglambda167BDDF4.assets.json\\\" --verbose publish \\\"ecd7d91fb18b9a115d897f38ba936dfd3a2a8f10abd3ace8d0d2998e77c0ab90:current_account-current_region\\\"\"\n      ]\n    }\n  }\n}",
           "Type": "CODEPIPELINE"
         },
         "Cache": {
